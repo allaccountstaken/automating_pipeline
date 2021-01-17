@@ -9,7 +9,7 @@ Generally speaking, AutoML process can be broken down into several fundamental s
 
 The process starts with data ingestion, complexity of which eventually determines model configuration. Compute target configuration and setup are next. Experiment run, the third step, will produce numerous models. The best model needs to be selected according to a predefined selection criteria, for example testing accuracy score. The best model is registered and deployed. Once the model is deployed, endpoints become available for consumption. At the final step, consumed model can be used for inference remotely. 
 
-## Key Steps
+## Key Steps - web-based UI
 The top of the diagram UI path starts with uploading and validating the dataset. Once the dataset is registered on the platform, it becomes available for New AutoML Run. 
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/2.1.png)
 When configuring the run, new Experiment is created with Target column set to “y” and compute cluster set to Standard_DS12_V2. 
@@ -27,26 +27,29 @@ Application insights were enabled programmatically by running `logs.py` python s
 Swagger documentation was used to send POST and GET requests to the model for remote inference.  
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/5.1.png)
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/5.2.png)
-Communicating with the deployed model for inference takes the following form: {“result”:[“yes”, “no”]}
+Communication with the deployed model for inference is done in `endpoint.py` and takes the following form: {“result”:[“yes”, “no”]}
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/6.1.png)
+
+## Key Steps - Jyputer Notebook
 Alternative path employs Jyputer Notebook for pipeline definition and control. First, python dependencies, workspace configuration and experiment variable are loaded. Second, AmlCompute cluster is created and the dataset is loaded. AutoMlCongig is defined to train the best classification model on target “y” with auto-fetuarization and early stopping. 
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/7.1.png)
-Pipeline with AutoMLStep is used to control the flow of iterative experiment runs with RunDetails.Once PipelineRun is complete, results become available for examination. The best model can also be retrieved, examined and tested. If performance is satisfactory, the pipeline can be published, what is roughly equivalent to model registration and deployment. 
+Pipeline with AutoMLStep is used to control the flow of iterative experiment runs with RunDetails.Once the PipelineRun is complete, results become available for examination. The best model can also be retrieved, examined and tested. If performance is satisfactory, the pipeline can be published, what is roughly equivalent to model registration and deployment. 
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/7.4.png)
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/7.5.1.png)
 At the end of this process, REST endpoints become available. 
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/7.2.png)
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/7.3.png)
-Endpoint can be used with requests for json payload transmission. 
+Endpoint can be used with requests for JSON payload transmission. 
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/7.6.png)
 Published pipeline run is presented below:
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/7.5.2.png)
 
 ## Screen Recording
-*TODO Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+*TODO Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:*
 
 ## Standout Suggestions
-*TODO:Fix authentication by using enterprise edition
+*TODO:
+Fix authentication by using enterprise edition
 Use Different model
 Run everything from the python scripts using SDK only
-TODO (Optional): This is where you can provide information about any standout suggestions that you have attempted.
+TODO (Optional): This is where you can provide information about any standout suggestions that you have attempted.*
