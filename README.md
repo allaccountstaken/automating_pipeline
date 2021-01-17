@@ -1,14 +1,15 @@
-#Operationalizing Pipeline with AutoML
+# Operationalizing Pipeline with AutoML
+
 *NOTE: This project is part of the Udacity Azure ML Nanodegree. In this project, I create Microsoft Azure AutoML pipeline using two alternative approaches, a web-based UI and a Jyputer Notebook. Both paths allow for some degree of automation, but provide different user experience and level of customization.*
 
-##Architectural Diagram
+## Architectural Diagram
 Generally speaking, AutoML process can be broken down into several fundamental steps, shown with the flowchart in the middle of architectural diagram below. Specific steps of the two paths are mapped to the logical steps.
 
 ![]()
 
 The process starts with data ingestion, complexity of which eventually determines model configuration. Compute target configuration and setup are next. Experiment run, the third step, will produce numerous models. The best model needs to be selected according to a predefined selection criteria, for example testing accuracy score. The best model is registered and deployed. Once the model is deployed, endpoints become available for consumption. At the final step, consumed model can be used for inference remotely. 
 
-##Key Steps
+## Key Steps
 The top of the diagram UI path starts with uploading and validating the dataset. Once the dataset is registered on the platform, it becomes available for New AutoML Run. 
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/2.1.png)
 When configuring the run, new Experiment is created with Target column set to “y” and compute cluster set to Standard_DS12_V2. 
@@ -40,10 +41,12 @@ Endpoint can be used with requests for json payload transmission.
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/7.6.png)
 Published pipeline run is presented below:
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/7.5.2.png)
-##Screen Recording
-TODO Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-##Standout Suggestions
-Fix authentication by using enterprise edition
+
+## Screen Recording
+*TODO Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+
+## Standout Suggestions
+*TODO:Fix authentication by using enterprise edition
 Use Different model
 Run everything from the python scripts using SDK only
 TODO (Optional): This is where you can provide information about any standout suggestions that you have attempted.
