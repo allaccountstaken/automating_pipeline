@@ -9,7 +9,7 @@ Generally speaking, AutoML process can be broken down into several fundamental s
 
 The process starts with data ingestion, complexity of which eventually determines model configuration. Compute target configuration and setup are next. Experiment run, the third step, will produce numerous models. The best model needs to be selected according to a predefined selection criteria, for example testing accuracy score. The best model is registered and deployed. Once the model is deployed, endpoints become available for consumption. At the final step, consumed model can be used for inference remotely. 
 
-## Key Steps - web-based UI
+## Key Steps for Web-Based UI
 The top of the diagram UI path starts with uploading and validating the dataset. Once the dataset is registered on the platform, it becomes available for New AutoML Run. 
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/2.1.png)
 When configuring the run, new Experiment is created with Target column set to “y” and compute cluster set to Standard_DS12_V2. 
@@ -30,7 +30,7 @@ Swagger documentation was used to send POST and GET requests to the model for re
 Communication with the deployed model for inference is done in `endpoint.py` and takes the following form: {“result”:[“yes”, “no”]}
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/6.1.png)
 
-## Key Steps - Jyputer Notebook
+## Key Steps for Jyputer Notebook
 Alternative path employs Jyputer Notebook for pipeline definition and control. First, python dependencies, workspace configuration and experiment variable are loaded. Second, AmlCompute cluster is created and the dataset is loaded. AutoMlCongig is defined to train the best classification model on target “y” with auto-fetuarization and early stopping. 
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/7.1.png)
 Pipeline with AutoMLStep is used to control the flow of iterative experiment runs with RunDetails.Once the PipelineRun is complete, results become available for examination. The best model can also be retrieved, examined and tested. If performance is satisfactory, the pipeline can be published, what is roughly equivalent to model registration and deployment. 
