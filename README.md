@@ -45,7 +45,7 @@ Published pipeline run is presented below:
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/7.5.2.png)
 
 ## Screen Recording
-*TODO Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:*
+*TODO -- link to a screen recording of the project in action. Remember that the screencast should demonstrate:*
 
 ## Standout Suggestions
 *TODO:
