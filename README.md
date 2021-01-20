@@ -3,10 +3,8 @@
 *NOTE: This project is part of the Udacity Azure ML Nanodegree. In this project, I create Microsoft Azure AutoML pipeline using two alternative approaches, a web-based UI and a Jyputer Notebook. Both paths allow for some degree of automation, but provide different user experience and level of customization.*
 
 ## Architectural Diagram
-Generally speaking, AutoML process can be broken down into several fundamental steps, shown with the flowchart in the middle of architectural diagram below. Specific steps of the two paths are mapped to the logical steps.
-
-![]()
-
+Generally speaking, AutoML process can be broken down into several fundamental steps, shown with the flowchart in the middle of architectural diagram below. Specific steps of the two paths can be mapped to the logical steps.
+![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/design.png)
 The process starts with data ingestion, complexity of which eventually determines model configuration. Compute target configuration and setup are next. Experiment run, the third step, will produce numerous models. The best model needs to be selected according to a predefined selection criteria, for example testing accuracy score. The best model is registered and deployed. Once the model is deployed, endpoints become available for consumption. At the final step, consumed model can be used for inference remotely. 
 
 ## Key Steps for Web-Based UI
