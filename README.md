@@ -47,7 +47,7 @@ Published pipeline run is presented below:
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/7.5.2.png)
 
 ## Screen Recording
-*TODO -- link to a screen recording of the project in action. Remember that the screencast should demonstrate:*
+Link to a screen recording of the project in action: https://youtu.be/GScuQcDMfQo
 
 ## Improving the project
 It was very difficult to complete the project in the slow Lab environment, so I used my personal Azure account. Here are two noteworthy observations for future improvements:
