@@ -49,8 +49,8 @@ Published pipeline run is presented below:
 ## Screen Recording
 *TODO -- link to a screen recording of the project in action. Remember that the screencast should demonstrate:*
 
-## Standout Suggestions
-It was very difficult to complete the project in the Lab, so I used my personal Azure account. Here are two noteworthy observations:
+## Improving the project
+It was very difficult to complete the project in the slow Lab environment, so I used my personal Azure account. Here are two noteworthy observations for future improvements:
 1.  Authentication did not work properly, possibly because I was not able to upgrade my account to enterprise level.
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/1.1.png)
 2.  It took me approximately 5 days to complete the project and I had to incur some noticeable costs.
