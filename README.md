@@ -30,8 +30,12 @@ Communication with the deployed model for inference is done in `endpoint.py` and
 
 ## Key Steps for Jyputer Notebook
 Alternative path employs Jyputer Notebook for pipeline definition and control. First, python dependencies, workspace configuration and experiment variable are loaded. Second, AmlCompute cluster is created and the dataset is loaded. AutoMlCongig is defined to train the best classification model on target “y” with auto-fetuarization and early stopping. 
+![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/create_pipeline.png)
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/7.1.png)
-Pipeline with AutoMLStep is used to control the flow of iterative experiment runs with RunDetails.Once the PipelineRun is complete, results become available for examination. The best model can also be retrieved, examined and tested. If performance is satisfactory, the pipeline can be published, what is roughly equivalent to model registration and deployment. 
+Pipeline with AutoMLStep is used to control the flow of iterative experiment runs with RunDetails. 
+![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/automlstep_results.png)
+![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/pipeline_run.png)
+Once the PipelineRun is complete, results become available for examination. The best model can also be retrieved, examined and tested. If performance is satisfactory, the pipeline can be published, i.e. equivalent to model registration and deployment. 
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/7.4.png)
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/7.5.1.png)
 At the end of this process, REST endpoints become available. 
@@ -46,8 +50,8 @@ Published pipeline run is presented below:
 *TODO -- link to a screen recording of the project in action. Remember that the screencast should demonstrate:*
 
 ## Standout Suggestions
-*TODO:
-Fix authentication by using enterprise edition
-Use Different model
-Run everything from the python scripts using SDK only
-TODO (Optional): This is where you can provide information about any standout suggestions that you have attempted.*
+It was very difficult to complete the project in the Lab, so I used my personal Azure account. Here are two noteworthy observations:
+1.  Authentication did not work properly, possibly because I was not able to upgrade my account to enterprise level.
+![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/1.1.png)
+2.  It took me approximately 5 days to complete the project and I had to incur some noticeable costs.
+![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/cost_analysis.png)
