@@ -70,7 +70,7 @@ Important, `RunDetails` can be used to monitor the status of the new run.
 ![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/new_rundetails.png)
 
 ## Screen Recording
-Link to a screen recording of the project in action: https://youtu.be/GScuQcDMfQo
+Link to a screen recording of the project in action: https://youtu.be/PMOJDfQHvUk
 
 ## Improving the project
 Performance of the model could be improved by training on a larger dataset or selecting a different primary performance metric. Additionally, oversampling techniques can help mitigate class imbalances.
