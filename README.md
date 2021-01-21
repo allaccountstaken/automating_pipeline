@@ -74,8 +74,5 @@ Performance of the model could be improved by training on a larger dataset or se
 
 Pipeline optimization may include more granular separation of steps and running them in parallel on different notes. Similarly, several models may be selected for different tasks, for example optimizing precision or recall, and consumed for inference via different endpoints.  
 
-It was very difficult to complete the project in the slow Lab environment, so I used my personal Azure account. Here are two noteworthy observations:
-1.  Authentication did not work properly, possibly because I was not able to upgrade my account to enterprise level.
-![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/1.1.png)
-2.  It took me approximately 5 days to complete the project and I had to incur some noticeable costs.
-![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/cost_analysis.png)
+It was very difficult to complete the project in the slow Lab environment, so I used my personal Azure account. Authentication did not work properly, possibly because I was not able to upgrade my account to the enterprise level.
+![](https://github.com/allaccountstaken/automating_pipeline/blob/main/imgs/1.1.png)g)
